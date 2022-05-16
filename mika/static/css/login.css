@@ -1,0 +1,157 @@
+.container_tems {
+	height: 100vh;
+}
+
+.container_post  {
+	height: auto;
+}
+
+.post_form {
+	text-align: center;
+}
+
+.container_post {
+	height: auto;
+	padding: 10px 10rem;
+	padding-bottom: 10rem;
+}
+
+.container_title {
+	font-family: sans-serif;
+	color: #0808089e;
+	margin-bottom: 1rem;
+}
+
+.content {
+	margin-bottom: 2rem;
+
+}
+
+.email_label {
+	font-family: sans-serif;
+	color: #0808089e; 
+	margin-right: 1rem;
+}
+
+.password_label {
+	font-family: sans-serif;
+	color: #0808089e;
+	margin-right: 1rem;
+}
+
+.firstName_label {
+	font-family: sans-serif;
+	color: #0808089e;
+	margin-right: 1rem;
+}
+
+.email {
+	border: none;
+    border-radius: 0.5px;
+	padding: 5px 10px;
+
+	outline: solid 2px #e1dbdb;
+	color: #0808089e;
+}
+
+.email::placeholder {
+	color: #eb5710;
+}
+
+.email:focus {
+	outline: solid 2px #eb5710;
+}
+
+.password {
+	border: none;
+    border-radius: 0.5px;
+	padding: 5px 10px;
+
+	outline: solid 2px #e1dbdb;
+	color: #0808089e;
+}
+
+.password::placeholder {
+	color: #eb5710;
+}
+
+.password:focus {
+	outline: solid 2px #eb5710;
+}
+
+.firstName {
+	border: none;
+    border-radius: 0.5px;
+	padding: 5px 10px;
+
+	outline: solid 2px #e1dbdb;
+	color: #0808089e;
+}
+
+.firstName::placeholder {
+	color: #eb5710;
+}
+
+.firstName:focus {
+	outline: solid 2px #eb5710;
+}
+
+.content p {
+	display: none;
+}
+
+.true {
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #e1dbdb;
+    background: #f10b0bc9;
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.submit_btn {
+	border: none;
+	border-radius: 5px;
+
+	padding: 10px 30px;
+	background: #eb5710;
+	color: white;
+
+	font-family: sans-serif;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.submit_btn:hover {
+	background: rgb(175, 65, 21);
+}
+
+
+/* submit post css*/
+
+.content_post {
+	height: auto;
+	padding: 10px 10rem;
+	padding-bottom: 10rem;
+}
+
+.content_blog {
+	border: none;
+    border-radius: 0.5px;
+	padding: 5px 10px;
+	width: 100%;
+	height: auto;
+	outline: solid 2px #e1dbdb;
+	color: #0808089e;
+}
+
+.content_blog::placeholder {
+	color: #eb5710;
+}
+
+.content_blog:focus {
+	outline: solid 2px #eb5710;
+}

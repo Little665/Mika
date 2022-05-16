@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Blog</title>
+	<link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/section_one.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/termos.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/notfound.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blog.css') }}">
+	<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/900564966753574942/971230959145988156/unknown.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+	    <div>
+	      <img class="mika-avatar" src="{{ url_for('static', filename='img/mika_avatar.png') }}" alt="MIKA">
+	      <h1>Mika RPG bot</h1>
+	    </div>
+
+	    <ul>
+	      <li><a href="https://dsc.gg/ᴋᴏᴄ">Suporte</a></li>
+	      <li> <a href="./commands">Comandos</a></li>
+	      <li><a href="./termos">Termos</a></li>
+	    </ul>
+
+	    <div class="menu-section ">
+	        <div class="menu-toggle">
+	            <div class="one"></div>
+	            <div class="two"></div>
+	            <div class="three"></div>
+	        </div>
+
+	        <div class="nav-comandos">
+	            <ul>
+	              <li><a href="https://dsc.gg/ᴋᴏᴄ">Suporte</a></li>
+	              <li> <a href="./commands">Comandos</a></li>
+	              <li><a href="./termos">Termos</a></li>
+	            </ul>
+	        </div>
+
+    	</div>
+  	</header>
+
+  	<section class="container_tems">
+
+  		{% for rows in post %}
+  		<div class="blog_one">
+              <img class="container_img_terms" src='{{ post[rows]["img"] }}'>
+              <div class="container_description_terms">
+                  <h2 class="title_terms">{{ post[rows]["titulo"] }}</h2>
+                  <div class="text_blog">
+                      <p><span>{{ post[rows]["introducao"] }}</span>{{ post[rows]["paragrafo_one"] }}</p>
+                      <p>{{ post[rows]["paragrafo_two"] }}</p>
+                      <p><span>{{ post[rows]["resumo"] }}</span>{{ post[rows]["paragrago_three"] }}</p>
+                  </div>
+                  <h4 class="date_post">Postado em: <strong>{{ post[rows]["data"] }}</strong></h4>
+              </div>    
+          </div>
+        {% endfor %}
+
+  	</section>
+
+  	<footer>
+	    <div class="footer_list_flex">
+	      <div class="footer_list_suport">
+	        <span class="suporte_infos">
+	          <img src="https://cdn.discordapp.com/attachments/900564966753574942/970143514388230234/apoio-suporte.png">
+	          <h3>Suporte</h3>
+	        </span>
+	        <p>Servidor de suporte da mika: <strong> <a class="footer_server_suport" href="https://dsc.gg/ᴋᴏᴄ ">Kingdom of Creation</a></strong></p>
+	      </div>
+	      
+	      <div class="footer_list_suport">
+	        <span class="suporte_infos">
+	          <img src="https://cdn.discordapp.com/attachments/900564966753574942/970149373738647602/aperto-de-mao-de-parceria.png">
+	          <h3>Parceria</h3>
+	        </span>
+	        <p>Parceria com: <strong><a class="parceria_yumi" href="https://ayo.so/yumibot">Yumi#5426</a></strong></p>
+	      </div>
+
+	      <div class="footer_list_suport">
+	        <span class="suporte_infos">
+	          <img src="https://cdn.discordapp.com/attachments/900564966753574942/970154772399259678/software-development.png">
+	          <h3>Developer</h3>
+	        </span>
+	        <p>Prøxy $arłuni#5819</p>
+	      </div>
+
+	      <div class="footer_list_suport">
+	        <span class="suporte_infos">
+	          <img src="https://cdn.discordapp.com/attachments/900564966753574942/970157053840609320/mais.png">
+	          <h3>Me Adicione</h3>
+	        </span>
+	        <button class="container_one_button_add"><a class="del_link" href="https://discord.com/api/oauth2/authorize?client_id=911986947940044850&permissions=8&scope=bot%20applications.commands">Me adicione.</a></button>
+	      </div>
+	    </div>
+	    
+	    <div class="footer_finaly">
+	      <p>©copyrigth-2022</p>
+	    </div>
+	</footer>
+
+
+	<script src="{{ url_for('static', filename='js/notfound.js') }}"></script>
+</body>
+</html>

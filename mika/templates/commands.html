@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>Commands</title>
+  	<link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet" type="text/css" />
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/section_one.css')}}">
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/commands.css') }}">
+  	<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/900564966753574942/971230959145988156/unknown.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+	    <div>
+	      <img class="mika-avatar" src="{{ url_for('static', filename='img/mika_avatar.png') }}" alt="MIKA">
+	      <h1>Mika RPG bot</h1>
+	    </div>
+
+	    <ul>
+	      <li><a href="https://dsc.gg/ᴋᴏᴄ">Suporte</a></li>
+	      <li> <a href="/">Home</a></li>
+	      <li><a href="./termos">Termos</a></li>
+	    </ul>
+
+	    <div class="menu-section ">
+	        <div class="menu-toggle">
+	            <div class="one"></div>
+	            <div class="two"></div>
+	            <div class="three"></div>
+	        </div>
+
+	        <div class="nav-comandos">
+	            <ul>
+	              <li><a href="https://dsc.gg/ᴋᴏᴄ">Suporte</a></li>
+	              <li> <a href="./commands">Comandos</a></li>
+	              <li><a href="./termos">Termos</a></li>
+	            </ul>
+	        </div>
+
+    	</div>
+  	</header>
+
+  	<main class="container_comamnds">
+	  	<section class="container_left">
+	  		<div class="container_commands_categorias">
+	  			<h2>Categorias</h2>
+	  		</div>
+
+	  		<div class="container_commands_list_categoria">
+	  			<ul>
+					<li class="categorias_click_span click_moderation categorias_click">Moderação <p>11</p></li>
+	  				<li class="categorias_click_span click_information ">Informação <p>6</p></li>
+	  				<li class="categorias_click_span click_diversao">Diversão <p>5</p></li>
+	  			</ul>
+	  		</div>
+	  	</section>
+	  		
+	  	<section class="container_right">
+	  		<div class="commands_img_p">
+	  			<img class="img_commands_p" src="https://images.uncyc.org/wikinet/a/a2/Bazukinha_cardigan.png">
+	  			<p class="welcome_commands">Olá! veja meus <strong>comandos</strong> abaixo, ou ecolha uma categoria.</p>
+	  		</div>
+
+	  		<div class="commands_colun ">
+	  			<div class="colun_style_css cilck_description_ban">
+	  				<span class="colun_header">
+	  					<h2>/ban</h2>
+	  				</span>
+	  				<p class="colun_header_description">Você pode bani membros com esse comando.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_ban">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970835606471077929/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_unban">
+	  				<span class="colun_header">
+	  					<h2>/unban</h2>
+	  				</span>
+	  				<p class="colun_header_description">Você pode desbani o membro que foi banido do servidor.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_unban">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970836419322990613/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_delchannel">
+	  				<span class="colun_header">
+	  					<h2>/deletechannel</h2>
+	  				</span>
+	  				<p class="colun_header_description">Você pode deleta salas ou categorias no seu servidor.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_delchannel">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970837381169164399/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_kick">
+	  				<span class="colun_header">
+	  					<h2>/kick</h2>
+	  				</span>
+	  				<p class="colun_header_description">Você pode expulsar membro no seu servidor com este comando</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_lock">
+	  				<span class="colun_header">
+	  					<h2>/lock</h2>
+	  				</span>
+	  				<p class="colun_header_description">Bloquear envios de mensagens em determinado canal.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_lock">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970838857266368532/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_unlock">
+	  				<span class="colun_header">
+	  					<h2>/unlock</h2>
+	  				</span>
+	  				<p class="colun_header_description">Desbloqueie o envios de mensagens no canal que foi bloqueado.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_unlock">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970839455550308382/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_editnick">
+	  				<span class="colun_header">
+	  					<h2>/editnick</h2>
+	  				</span>
+	  				<p class="colun_header_description">Você pode editar o nicks dos membros com este comando.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_editnick">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970839963333689434/unknown.png">
+	  				</div>
+	  			</div>
+
+
+	  			<div class="colun_style_css cilck_description_addrole">
+	  				<span class="colun_header">
+	  					<h2>/addrole</h2>
+	  				</span>
+	  				<p class="colun_header_description">Adicione cargos aos membros.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_addrole">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970840237657952256/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_dm">
+	  				<span class="colun_header">
+	  					<h2>/dm</h2>
+	  				</span>
+	  				<p class="colun_header_description">Envia mensagens no privado/dm de um membro.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_dm">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970840616760127518/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_antlink">
+	  				<span class="colun_header">
+	  					<h2>/antlink</h2>
+	  				</span>
+	  				<p class="colun_header_description">Bloqueia os envios de link's.</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_say">
+	  				<span class="colun_header">
+	  					<h2>/say</h2>
+	  				</span>
+	  				<p class="colun_header_description">Envie uma mensagem "anonima".</p>
+	  				<div class="clasification">
+	  					<p>M.O.D</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_say">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900564968297091082/970841265027575908/unknown.png">
+	  				</div>
+	  			</div>
+
+	  		</div>
+
+	  		<!--informação-->
+
+	  		<div class="commands_colun_information ">
+	  			<div class="colun_style_css cilck_description_channelinfo">
+	  				<span class="colun_header">
+	  					<h2>/channelinfo</h2>
+	  				</span>
+	  				<p class="colun_header_description">Mostra informações do canal.</p>
+	  				<div class="clasification_information">
+	  					<p>I.N.F</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_channelinfo">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900237/970843954893422602/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_serverinfo">
+	  				<span class="colun_header">
+	  					<h2>/serverinfo</h2>
+	  				</span>
+	  				<p class="colun_header_description">Mostra informações do servidor.</p>
+	  				<div class="clasification_information">
+	  					<p>I.N.F</p>
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_emojiinfo">
+	  				<span class="colun_header">
+	  					<h2>/emojiinfo</h2>
+	  				</span>
+	  				<p class="colun_header_description">Mostra informações de um determinado emoji</p>
+	  				<div class="clasification_information">
+	  					<p>I.N.F</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_emojiinfo">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900236/970850133640093716/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_userinfo">
+	  				<span class="colun_header">
+	  					<h2>/userinfo</h2>
+	  				</span>
+	  				<p class="colun_header_description">Mostra informações de um membro do servidor.</p>
+	  				<div class="clasification_information">
+	  					<p>I.N.F</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_userinfo">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900237/970851408846946345/unknown.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_botinfo">
+	  				<span class="colun_header">
+	  					<h2>/botinfo</h2>
+	  				</span>
+	  				<p class="colun_header_description">Veja informações sobre mim.</p>
+	  				<div class="clasification_information">
+	  					<p>I.N.F</p>
+	  				</div>
+	  			</div>
+
+	  		</div>
+
+	  		<!--informação-->
+
+	  		<div class="commands_colun_diversao ">
+	  			<div class="colun_style_css cilck_description_stonks">
+	  				<span class="colun_header">
+	  					<h2>/stonks</h2>
+	  				</span>
+	  				<p class="colun_header_description">Stonks 💹 ??</p>
+	  				<div class="clasification_diversao">
+	  					<p>D.I.V</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_stonks">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900235/970859937615970314/stonks.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_twitter">
+	  				<span class="colun_header">
+	  					<h2>/twitter</h2>
+	  				</span>
+	  				<p class="colun_header_description">Mande aquela frase top no twitter.</p>
+	  				<div class="clasification_diversao">
+	  					<p>D.I.V</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_twitter">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900235/970860827907354684/twitter.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_twittersherk">
+	  				<span class="colun_header">
+	  					<h2>/twittersherk</h2>
+	  				</span>
+	  				<p class="colun_header_description">Coloque uma frase bem top em um poste com a foto do sherk.</p>
+	  				<div class="clasification_diversao">
+	  					<p>D.I.V</p>
+	  				</div>
+
+	  				<div class="commands_img_description command_twittersherk">
+	  					<p>Exemplo:</p>
+
+	  					<img src="https://cdn.discordapp.com/attachments/900524035102900235/970861751367249930/twitter.png">
+	  				</div>
+	  			</div>
+
+	  			<div class="colun_style_css cilck_description_8ball">
+	  				<span class="colun_header">
+	  					<h2>/8ball</h2>
+	  				</span>
+	  				<p class="colun_header_description">Me faça uma pergunta.</p>
+	  				<div class="clasification_diversao">
+	  					<p>D.I.V</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</section>
+	</main>
+
+
+	<script src="{{ url_for('static', filename='js/click_on_commands.js') }}"></script>
+</body>
+	
+</html>	

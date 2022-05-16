@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+footer {
+    background: rgb(19, 19, 19);
+
+    width: 100%;
+    padding: 2rem 10px 0px 10px;
+}
+
+.footer_list_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_list_suport {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+}
+
+.suporte_infos {
+    display: flex;
+    align-items: center;
+
+}
+.suporte_infos img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.parceria_yumi {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.footer_list_suport p {
+    color: rgb(226, 226, 226);
+    font-weight: 200;
+}
+
+.footer_server_suport {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.footer_finaly {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+    margin-top: 2rem;
+    border-top: solid #1e1e1e 3px;
+    padding: 10px;
+}
+
+.footer_finaly p {
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #1e1e1e;
+}
+
+
+@media (max-width: 654px) {
+
+    .footer_list_flex  {
+        display: block;
+    }
+
+    .suporte_infos {
+        display: block;
+    }
+
+    .icon_ani_two {
+        right: 25rem;
+    }
+
+    .footer_list_suport {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
